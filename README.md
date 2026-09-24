@@ -1,16 +1,24 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Desarrollo de la Experiencia 2.
 
-Currently, two official plugins are available:
+# Apuntes Guía 10
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Props: Los props son los parámetros de una función. Ese parámetro puede ser una función (revisar el concepto de funciones de orden superior).
 
-## React Compiler
+En TarjetaActividad, onInscribir ingresa como parámetro, siendo una función.
+Luego, al usar la función con ingresos de parámetros, se puede usar la función para ejecutar las entradas de un arreglo, donde cada índice llena los datos que requiere la función. Esto es útil para repeticiones (por ejemplo, artículos de diario o productos).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Map: véase en Cartelera.jsx. map transforma el arreglo en otra cosa, y lo hace mediante la función que está dentro de su propio prop.
 
-## Expanding the ESLint configuration
+Función anónima: véase en Cartelera.jsx. función sin nombre, usada mucho dentro de métodos como map. comienza con un objeto, declarado al principio, y mediante una flecha (=>) se define qué es lo que se quiere que ocurra.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+useState: véase en App.jsx. Ordena una nueva renderización de página cuando hay un cambio de categoría.
+
+Operador Ternario: véase en App.jsx. ? y :, definen una pregunta y su reacción a un retorno TRUE o FALSE.
+
+onChange: véase en App.jsx. Dispara una acción al ocurrir un cambio.
+
+some: véase App.jsx. Comprueba si un elemento de un arreglo cumple con una condición y reotrna un boolean.
+
+useEffect: véase App.jsx. Al detectar un cambio, sobreescribe información.
