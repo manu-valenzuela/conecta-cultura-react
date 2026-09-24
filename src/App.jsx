@@ -65,11 +65,15 @@ function eliminarInscripcion(id) {
           className="form-select mb-4"
           value={categoria}
           //Aquí se activa el setState al ocurrir un cambio de evento. Al activarse, o dispararse, la ejecución vuelve a visibles.
+
+          //Al agregar actividades, fue necesario agregar los nombres de las categorías nuevas a esta lista manualmente.
           onChange={(evento) => setCategoria(evento.target.value)}
         >
           <option>Todas</option>
           <option>Música</option>
           <option>Artes visuales</option>
+          <option>Danza</option>
+          <option>Teatro</option>
         </select>
         <Cartelera
           actividades={visibles}
