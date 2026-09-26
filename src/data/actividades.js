@@ -63,7 +63,7 @@ export const actividades = [
     nombre: "Ritmos urbanos y expresión",
     categoria: "Danza",
     descripcion: "Coreografías dinámicas orientadas a ritmos urbanos e improvisación.",
-    precio: 15000,
+    precio: 0,
     cupos: 12
   },
   {
@@ -79,7 +79,7 @@ export const actividades = [
     nombre: "Ensamble de percusión",
     categoria: "Música",
     descripcion: "Práctica de ritmos latinoamericanos en grupo mediante instrumentos de percusión.",
-    precio: 17000,
+    precio: 0,
     cupos: 14
   }
 ];

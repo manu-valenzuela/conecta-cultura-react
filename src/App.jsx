@@ -36,10 +36,12 @@ function inscribir(actividad) {
   const yaExiste = inscripciones.some((item) => item.id === actividad.id);
 
   if (yaExiste) return;
-
+//... agrega entradas en un arreglo
   setInscripciones([...inscripciones, actividad]);
 }
 
+//Para eliminar inscripciones, usa el booleano devuelto por filter donde discrimina si el objeto
+//coincide o no con el id del elemento que que quiere eliminar.
 function eliminarInscripcion(id) {
   setInscripciones(
     inscripciones.filter((item) => item.id !== id)
@@ -77,8 +79,13 @@ function eliminarInscripcion(id) {
         </select>
         <Cartelera
           actividades={visibles}
-          onInscribir={inscribirTemporal}
+          onInscribir={inscribir}
         />
+        <hr></hr>
+        <MisInscripciones
+            inscripciones={inscripciones}
+            onEliminar={eliminarInscripcion}
+          />
       </main>
     </>
   );

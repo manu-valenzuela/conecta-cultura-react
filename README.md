@@ -22,3 +22,9 @@ onChange: véase en App.jsx. Dispara una acción al ocurrir un cambio.
 some: véase App.jsx. Comprueba si un elemento de un arreglo cumple con una condición y reotrna un boolean.
 
 useEffect: véase App.jsx. Al detectar un cambio, sobreescribe información.
+
+[]: Cada aparición de estos corchetes denota el uso de un arreglo.
+
+...: véase App.jsx. dentro de un arreglo, ... agrega una entrada a un arreglo.
+
+filter: véase App.jsx. función que devuelve un booleano dependiendo si el criterio de la función anónima cumple con un criterio o no.
