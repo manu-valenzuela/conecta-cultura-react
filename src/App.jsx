@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 import Cabecera from "./components/Cabecera";
 import Navegacion from "./components/Navegacion";
 import Cartelera from "./pages/Cartelera";
+import MisInscripciones from "./pages/MisInscripciones";
 import { actividades } from "./data/actividades";
+
 
 function App() {
   /*useState: Primero entran los parámetros. categoría y setCategoria son un Getter y un Setter. 
@@ -47,17 +49,7 @@ function eliminarInscripcion(id) {
     inscripciones.filter((item) => item.id !== id)
   );
 }
-
-<Cartelera
-  actividades={visibles}
-  onInscribir={inscribir}
-/>
-
-
-  function inscribirTemporal(actividad) {
-    console.log("Actividad seleccionada:", actividad.nombre);
-  }
-  
+ 
   return (
     <>
       <Cabecera />
@@ -83,9 +75,9 @@ function eliminarInscripcion(id) {
         />
         <hr></hr>
         <MisInscripciones
-            inscripciones={inscripciones}
-            onEliminar={eliminarInscripcion}
-          />
+          inscripciones={inscripciones}
+          onEliminar={eliminarInscripcion}
+        />
       </main>
     </>
   );

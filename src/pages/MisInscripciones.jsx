@@ -1,5 +1,5 @@
 import TarjetaActividad from "../components/TarjetaActividad";
-import Inscripcion from ".../components/Inscripcion";
+import Inscripcion from "../components/Inscripcion";
 
 //Aquí, nótese que el prop está en plural. Es decir, es un arreglo.
 function MisInscripciones({ inscripciones, onEliminar }) {
@@ -8,7 +8,7 @@ function MisInscripciones({ inscripciones, onEliminar }) {
       <h2>Mis Inscripciones</h2>
       {inscripciones.map((item) => (
         <div className="col-12 col-md-6 col-lg-4" key={item.id}>
-          <MisInscripciones
+          <Inscripcion
             inscripcion={item}
             onEliminar={onEliminar}
           />

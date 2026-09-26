@@ -12,6 +12,9 @@ function TarjetaActividad({ actividad, onInscribir }) {
         {actividad.precio <= 0 && (
           <p className="text-success fw-bold">¡Gratis!</p>
         )}
+        {actividad.precio > 0 && (
+          <p>Precio: {actividad.precio}</p>
+        )}
         <button
           className="btn btn-primary"
           //Botón que se deshabilita cuando los cupos llegan a 0.
