@@ -28,3 +28,9 @@ useEffect: véase App.jsx. Al detectar un cambio, sobreescribe información.
 ...: véase App.jsx. dentro de un arreglo, ... agrega una entrada a un arreglo.
 
 filter: véase App.jsx. función que devuelve un booleano dependiendo si el criterio de la función anónima cumple con un criterio o no.
+
+##Guía 11
+
+Single Page Application: La navegación es posible a través de la primera página.
+
+useParams: véase DetalleActividad.
