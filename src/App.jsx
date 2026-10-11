@@ -5,6 +5,7 @@ import DetalleActividad from "./pages/DetalleActividad";
 import AdminActividades from "./pages/admin/AdminActividades"; 
 import NoEncontrada from "./pages/NoEncontrada";
 import Navegacion from "./components/Navegacion";
+import { guardarInscripciones } from "./utils/persistencia";
  
 function App() {
   //El retorno hay que devolverlo dentro de un conjunto vacío, de modo de asegurar que el retorno sea
@@ -26,7 +27,7 @@ function App() {
 export default App; 
 
 /*
-Deprecado en Guía 11 or el código de arriba
+Deprecado en Guía 11 por el código de arriba
 
 import { useEffect, useState } from "react";
 import Cabecera from "./components/Cabecera";
@@ -56,6 +57,7 @@ const [inscripciones, setInscripciones] = useState(() => {
   return guardadas ? JSON.parse(guardadas) : [];
 });
 
+--Guía 14: se pide reemplazar una parte de este código.
 useEffect(() => {
   localStorage.setItem(
     "inscripciones",
